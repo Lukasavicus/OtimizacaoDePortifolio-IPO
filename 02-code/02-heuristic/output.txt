@@ -1,0 +1,306 @@
+(245, 31) (13, 245)
+{'parent_selection_type': ['sss', 'rank'], 'num_parents_mating': [3, 5, 7], 'sol_per_pop': [5, 10, 15], 'keep_parents': [1, 2, 5], 'crossover_type': ['single_point', 'uniform'], 'mutation_type': ['random', 'swap', 'adaptive'], 'mutation_percent_genes': [10, 20, 30], 'num_generations': [1000, 5000, 10000, 20000, 100000]}
+Testing 1 of 2, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 3, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 T2 T3 T4 
+
+-2000322761134.22 71.50925052165985
+Testing 2 of 2, with params: {'parent_selection_type': 'rank', 'num_parents_mating': 3, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 T2 T3 T4 
+
+-2000347743377.3337 90.93829721212387
+--------------------------------------------------------------------------------
+evaluated [('sss', -2000322761134.22), ('rank', -2000347743377.3337)]
+best parent_selection_type : sss
+--------------------------------------------------------------------------------
+{'parent_selection_type': ['sss'], 'num_parents_mating': [3, 5, 7], 'sol_per_pop': [5, 10, 15], 'keep_parents': [1, 2, 5], 'crossover_type': ['single_point', 'uniform'], 'mutation_type': ['random', 'swap', 'adaptive'], 'mutation_percent_genes': [10, 20, 30], 'num_generations': [1000, 5000, 10000, 20000, 100000]}
+Testing 1 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 3, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 T2 T3 T4 
+
+-2000343001411.6099 60.882687747478485
+Testing 2 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 5, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 T2 T3 T4 
+
+-2000435119217.8708 52.01834052801132
+Testing 3 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+--------------------------------------------------------------------------------
+evaluated [(7, 0.0), (3, -2000343001411.6099), (5, -2000435119217.8708)] 
+best num_parents_mating : 7
+--------------------------------------------------------------------------------
+{'parent_selection_type': ['sss'], 'num_parents_mating': [7], 'sol_per_pop': [5, 10, 15], 'keep_parents': [1, 2, 5], 'crossover_type': ['single_point', 'uniform'], 'mutation_type': ['random', 'swap', 'adaptive'], 'mutation_percent_genes': [10, 20, 30], 'num_generations': [1000, 5000, 10000, 20000, 100000]}
+Testing 1 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+Testing 2 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 10, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 T2 T3 T4 
+
+-2000337264647.56 116.41548436880112
+Testing 3 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 15, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 T2 T3 T4 
+
+-2000321476244.5825 179.20682406425476
+--------------------------------------------------------------------------------
+evaluated [(5, 0.0), (15, -2000321476244.5825), (10, -2000337264647.56)] 
+best sol_per_pop : 5
+--------------------------------------------------------------------------------
+{'parent_selection_type': ['sss'], 'num_parents_mating': [7], 'sol_per_pop': [5], 'keep_parents': [1, 2, 5], 'crossover_type': ['single_point', 'uniform'], 'mutation_type': ['random', 'swap', 'adaptive'], 'mutation_percent_genes': [10, 20, 30], 'num_generations': [1000, 5000, 10000, 20000, 100000]}
+Testing 1 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+Testing 2 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 2, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+Testing 3 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 5, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+--------------------------------------------------------------------------------
+evaluated [(1, 0.0), (2, 0.0), (5, 0.0)]
+best keep_parents : 1
+--------------------------------------------------------------------------------
+{'parent_selection_type': ['sss'], 'num_parents_mating': [7], 'sol_per_pop': [5], 'keep_parents': [1], 'crossover_type': ['single_point', 'uniform'], 'mutation_type': ['random', 'swap', 'adaptive'], 'mutation_percent_genes': [10, 20, 30], 'num_generations': [1000, 5000, 10000, 20000, 100000]}
+Testing 1 of 2, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+Testing 2 of 2, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'uniform', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+--------------------------------------------------------------------------------
+evaluated [('single_point', 0.0), ('uniform', 0.0)]
+best crossover_type : single_point
+--------------------------------------------------------------------------------
+{'parent_selection_type': ['sss'], 'num_parents_mating': [7], 'sol_per_pop': [5], 'keep_parents': [1], 'crossover_type': ['single_point'], 'mutation_type': ['random', 'swap', 'adaptive'], 'mutation_percent_genes': [10, 20, 30], 'num_generations': [1000, 5000, 10000, 20000, 100000]}
+Testing 1 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+Testing 2 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'swap', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+Testing 3 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'adaptive', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+--------------------------------------------------------------------------------
+evaluated [('random', 0.0), ('swap', 0.0), ('adaptive', 0.0)]
+best mutation_type : random
+--------------------------------------------------------------------------------
+{'parent_selection_type': ['sss'], 'num_parents_mating': [7], 'sol_per_pop': [5], 'keep_parents': [1], 'crossover_type': ['single_point'], 'mutation_type': ['random'], 'mutation_percent_genes': [10, 20, 30], 'num_generations': [1000, 5000, 10000, 20000, 100000]}
+Testing 1 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+Testing 2 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 20, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+Testing 3 of 3, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 30, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+--------------------------------------------------------------------------------
+evaluated [(10, 0.0), (20, 0.0), (30, 0.0)]
+best mutation_percent_genes : 10
+--------------------------------------------------------------------------------
+{'parent_selection_type': ['sss'], 'num_parents_mating': [7], 'sol_per_pop': [5], 'keep_parents': [1], 'crossover_type': ['single_point'], 'mutation_type': ['random'], 'mutation_percent_genes': [10], 'num_generations': [1000, 5000, 10000, 20000, 100000]}
+Testing 1 of 5, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+Testing 2 of 5, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 5000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+Testing 3 of 5, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 10000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+Testing 4 of 5, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 20000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+Testing 5 of 5, with params: {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 100000}
+----------
+T1 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T2 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T3 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+T4 ERR The number of parents to select for mating (7) cannot be greater than the number of solutions in the population (5) (i.e., num_parents_mating must always be <= sol_per_pop).
+
+
+
+0.0 0.0
+--------------------------------------------------------------------------------
+evaluated [(1000, 0.0), (5000, 0.0), (10000, 0.0), (20000, 0.0), (100000, 0.0)]
+best num_generations : 1000
+--------------------------------------------------------------------------------
+[{'test_num': 2, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 0, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 0, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 1, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 2, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 2, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 5, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 0, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 1, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'uniform', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 0, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 1, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'swap', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 2, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'adaptive', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 0, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 1, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 20, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 2, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 30, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 0, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 1, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 5000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 2, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 10000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 3, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 20000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 4, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 100000, 'fitness_func': None, 'gene_space': None}, 'metric': 0.0, 'time': 0.0, 'solution': None}, {'test_num': 2, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 15, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': -2000321476244.5825, 'time': 179.20682406425476, 'solution': None}, {'test_num': 0, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 3, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': -2000322761134.22, 'time': 71.50925052165985, 'solution': None}, {'test_num': 1, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 7, 'sol_per_pop': 10, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': -2000337264647.56, 'time': 116.41548436880112, 'solution': None}, {'test_num': 0, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 3, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': -2000343001411.6099, 'time': 60.882687747478485, 'solution': None}, {'test_num': 1, 'params': {'parent_selection_type': 'rank', 'num_parents_mating': 3, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': -2000347743377.3337, 'time': 90.93829721212387, 'solution': None}, {'test_num': 1, 'params': {'parent_selection_type': 'sss', 'num_parents_mating': 5, 'sol_per_pop': 5, 'keep_parents': 1, 'crossover_type': 'single_point', 'mutation_type': 'random', 'mutation_percent_genes': 10, 'num_generations': 1000, 'fitness_func': None, 'gene_space': None}, 'metric': -2000435119217.8708, 'time': 52.01834052801132, 'solution': None}]

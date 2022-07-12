@@ -1,0 +1,82 @@
+# *****************************************************************************
+# Portifolio Allocation Problem												  *
+# --------------------------------------------------------------------------- *
+# The ideia here is sugest a portifolio of Investiment Funds Assets           *
+# negotiated B3 (Brazilian Stock Exchange). This is a optimization problem    *
+# where we try to optimize the allocation seeking performance (represented by *
+# dividend yield) subject mainly to the given budget.                         *
+# Other features of this modeling may include other financial objectives such *
+# as diversity, risk minimization and so on.                                  *
+# --------------------------------------------------------------------------- *
+# Lucas Lukasavicus                                                           *
+# 09 apr 2022                                                                 *
+# lukasavicus at gmail dot com                                                * 
+# *****************************************************************************
+
+# RUN CMD: include portifolio_alloc_markonno.run;
+
+# --- RESET ENV ---------------------------------------------------------------
+reset;
+# --- LOAD MODEL --------------------------------------------------------------
+model portifolio_alloc_markonno.mod;
+# --- LOAD DATA ---------------------------------------------------------------
+#data portifolio_alloc_markonno_pf.dat;
+#data portifolio_alloc_markonno_full.dat;
+#data portifolio_alloc_markonno_10.dat;
+data portifolio_alloc_markonno_100.dat;
+# --- EXPAND MODEL STATEMENTS -------------------------------------------------
+#expand Z, Rstr_Budget;
+# --- SET SOLVER --------------------------------------------------------------
+option solver cplex;
+#option solver MINOS;
+# --- SOLVE THE PROBLEM! ------------------------------------------------------
+solve;
+# --- SHOW RESULTS ------------------------------------------------------------
+display qa, qab, x;
+#display asset_data, expend_per_asset;
+display profit, expend, Z;
+display liquidity, diversity, risk;
+#display n_assets_per_sector, n_assets_per_sector_bin, n_assets_per_sector_value;
+#display sds_or_vars, means, risks;
+display total_sd_or_var, total_sd, total_var, total_mean, max_sd_or_var, max_mean, max_risk, risk, max_calculated_risk, min_calculated_risk;
+display normalized_risk;
+display (risk - min_calculated_risk);
+display (max_calculated_risk - min_calculated_risk);
+display min_liquidity, max_liquidity, liquidity, normalized_liquidity;
+display min_diversity, max_diversity, diversity, normalized_diversity;
+display min_profit, max_profit, profit, normalized_profit;
+#display rstr_lqdt;
+# -----------------------------------------------------------------------------
+printf: "Optimal Portfolio: \t Asset \t Aport \n";
+#printf {i in AS: qa[i] > 0}: "%40s %10.7f \n", all_assets[i], qa[i];
+printf {i in AS: qa[i] > 0}: "\t \t \t %d \t %10.7f \n", i, qa[i];
+# -----------------------------------------------------------------------------
+
+
+
+
+# *****************************************************************************
+# OFFICIAL DISCLAIMER                                                         *
+# --------------------------------------------------------------------------- *
+# Os instrumentos financeiros negociados em Bolsa de Valores podem n�o ser    *
+# adequados para todos os investidores. Os resultados disponibilizados por    *
+# esse programa n�o levam em considera��o os objetivos de investimento, a     *
+# situa��o financeira ou as necessidades espec�ficas de um determinado        *
+# investidor. A decis�o final em rela��o aos investimentos deve ser tomada    *
+# por cada investidor, levando em considera��o os v�rios riscos, tarifas e    *
+# comiss�es. A rentabilidade de instrumentos financeiros pode apresentar      *
+# varia��es, e seu pre�o ou valor pode aumentar ou diminuir, podendo,         *
+# dependendo das caracter�sticas da opera��o, implicar em perdas de valor at� *
+# superior ao capital investido.                                              *
+# Os desempenhos anteriores n�o s�o indicativos de resultados futuros e       *
+# nenhuma declara��o ou garantia, de forma expressa ou impl�cita, � feita em  *
+# rela��o a desempenhos futuros. O investimento em renda vari�vel �           *
+# considerado de alto risco, podendo ocasionar perdas, inclusive, superiores  *
+# ao montante de capital alocado. O preju�zo potencial apresentado �          *
+# meramente indicativo e o preju�zo efetivamente decorrente das opera��es     *
+# realizadas pode ser substancialmente distinto da estimativa. Os pre�os e    *
+# disponibilidades dos instrumentos financeiros s�o meramente indicativos e   *
+# sujeitos a altera��es sem aviso pr�vio. O investidor que realiza opera��es  *
+# de renda vari�vel � o �nico respons�vel pelas decis�es de investimento ou   *
+# de absten��o de investimento que tomar.                                     *
+# *****************************************************************************

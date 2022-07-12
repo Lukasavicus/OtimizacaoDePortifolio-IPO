@@ -1,0 +1,65 @@
+# *****************************************************************************
+# Portifolio Allocation Problem												  *
+# --------------------------------------------------------------------------- *
+# The ideia here is sugest a portifolio of Investiment Funds Assets           *
+# negotiated B3 (Brazilian Stock Exchange). This is a optimization problem    *
+# where we try to optimize the allocation seeking performance (represented by *
+# dividend yield) subject mainly to the given budget.                         *
+# Other features of this modeling may include other financial objectives such *
+# as diversity, risk minimization and so on.                                  *
+# --------------------------------------------------------------------------- *
+# Lucas Lukasavicus                                                           *
+# 09 apr 2022                                                                 *
+# lukasavicus at gmail dot com                                                * 
+# *****************************************************************************
+
+# RUN CMD: include portifolio_alloc.run;
+
+# --- RESET ENV ---------------------------------------------------------------
+reset;
+# --- LOAD MODEL --------------------------------------------------------------
+model portifolio_alloc.mod;
+# --- LOAD DATA ---------------------------------------------------------------
+data portifolio_alloc.dat;
+#data portifolio.dat;
+# --- EXPAND MODEL STATEMENTS -------------------------------------------------
+expand Z, Rstr_Budget;
+# --- SET SOLVER --------------------------------------------------------------
+option solver cplex;
+#option solver MINOS;
+# --- SOLVE THE PROBLEM! ------------------------------------------------------
+solve;
+# --- SHOW RESULTS ------------------------------------------------------------
+display qa, qab, asset_price, expend_per_asset, asset_dy, asset_lqdt, asset_pvp;
+display profit, expend, Z, liquidity, diversity;
+#display rstr_lqdt;
+# -----------------------------------------------------------------------------
+
+
+
+
+# *****************************************************************************
+# OFFICIAL DISCLAIMER                                                         *
+# --------------------------------------------------------------------------- *
+# Os instrumentos financeiros negociados em Bolsa de Valores podem não ser    *
+# adequados para todos os investidores. Os resultados disponibilizados por    *
+# esse programa não levam em consideração os objetivos de investimento, a     *
+# situação financeira ou as necessidades específicas de um determinado        *
+# investidor. A decisão final em relação aos investimentos deve ser tomada    *
+# por cada investidor, levando em consideração os vários riscos, tarifas e    *
+# comissões. A rentabilidade de instrumentos financeiros pode apresentar      *
+# variações, e seu preço ou valor pode aumentar ou diminuir, podendo,         *
+# dependendo das características da operação, implicar em perdas de valor até *
+# superior ao capital investido.                                              *
+# Os desempenhos anteriores não são indicativos de resultados futuros e       *
+# nenhuma declaração ou garantia, de forma expressa ou implícita, é feita em  *
+# relação a desempenhos futuros. O investimento em renda variável é           *
+# considerado de alto risco, podendo ocasionar perdas, inclusive, superiores  *
+# ao montante de capital alocado. O prejuízo potencial apresentado é          *
+# meramente indicativo e o prejuízo efetivamente decorrente das operações     *
+# realizadas pode ser substancialmente distinto da estimativa. Os preços e    *
+# disponibilidades dos instrumentos financeiros são meramente indicativos e   *
+# sujeitos a alterações sem aviso prévio. O investidor que realiza operações  *
+# de renda variável é o único responsável pelas decisões de investimento ou   *
+# de abstenção de investimento que tomar.                                     *
+# *****************************************************************************
